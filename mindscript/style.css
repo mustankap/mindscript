@@ -170,5 +170,178 @@ ul li.active a{
 	margin-bottom: 50px;
 	margin-top: 50px;
 	margin-left: 50px;
-	background-color: blue;
+	background-color:cornsilk;
+}
+
+/****Contact.html****/
+.contactwow{
+	background-color: cornsilk;
+	height: 100vh;
+	/*background-size: cover;*/
+	/*background-position: center;*/
+	position: relative;
+    width: 100%;
+    padding: 45px 0;
+
+}
+.container{
+	/*background-color: rgb(109, 103, 103);*//***Later need to change**/
+	/*float: left;*/
+	margin-left: 50px;
+	margin-top: 50px;
+	margin-right: 5%;
+}
+.section-headertext-center{
+	width: 60%;
+	margin-left: 40px;
+	background-color:cornsilk;
+}
+.section-headertext-center p{
+	color: darkgoldenrod;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 20px;
+	padding-left: 50px;
+}
+.section-headertext-center h2{
+	color:rgb(107, 85, 85);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 50px;
+	padding-left: 10px;
+}
+/*Contact details and about*/
+.contactwow .col-md-6 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contactwow .col-md-6:first-child {
+    background: rgb(37, 35, 35);
+	margin-left: 50%;
+}
+
+.contactwow .col-md-6:last-child {
+    background: #fdbe33;
+	margin-right: 50%;
+}
+
+.contactwow .contact-info {
+    position: relative;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.contactwow .contact-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    border: 2px solid rgba(256, 256, 256, .2);
+}
+
+.contactwow .contact-item [class^="flaticon-"]::before {
+    margin: 0;
+    color: #fdbe33;
+    font-size: 40px;
+}
+
+.contactwow .contact-text {
+    position: relative;
+    width: auto;
+    padding-left: 20px;
+}
+
+.contactwow .contact-text h2 {
+    color: #fdbe33;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contactwow .contact-text p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.contactwow .contact-item:last-child {
+    margin-bottom: 50px;
+	border: 2px solid rgba(256, 256, 256, .2);
+}
+
+.contactwow .contact-form {
+    position: relative;
+    padding: 0 15px;
+}
+
+.contactwow .contact-form input {
+    color: rgb(37, 35, 35);
+    height: 40px;
+    border-radius: 2px;
+    border-width: 2px;
+    border-color: rgba(256, 256, 256, .4);
+    background: transparent;
+}
+
+.contactwow .contact-form textarea {
+    color: rgb(37, 35, 35);
+    height: 185px;
+    border-radius: 0;
+    border-width: 1px;
+    border-color: rgba(256, 256, 256, .4);
+    background: transparent;
+}
+
+.contactwow .contact-form input:focus,
+.contact .contact-form textarea {
+    box-shadow: none;
+}
+
+.contactwow .contact-form .form-control::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.contactwow .contact-form .form-control::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.contactwow .contact-form .form-control::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.contactwow .contact-form .btn {
+    padding: 16px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fdbe33;
+    background: rgb(37, 35, 35);
+    border: none;
+    border-radius: 0;
+    transition: .3s;
+}
+
+.contactwow .contact-form .btn:hover {
+    color: rgb(37, 35, 35);
+    background: #ffffff;
+}
+
+.contactwow .help-block ul {
+    margin: 0;
+    padding: 50px;
+    list-style-type: none;
+}
+.ownership{
+	color: rgb(37, 35, 35);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin-bottom: 50px;
+	margin-right: 50px;
+	float: right;
+	margin-top: 30%;
+}
+.ownership h3{
+	margin-bottom: 50px;
+	margin-right: 50px;
+	float: left;
+	margin-top: 10%;
 }
