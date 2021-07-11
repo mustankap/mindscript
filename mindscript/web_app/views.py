@@ -7,3 +7,6 @@ def home(request):
 def about(request):
     return render(request,'web_app/about.html')
 
+def dashboard(request):
+    return render(request,'web_app/dashboard.html')
+
