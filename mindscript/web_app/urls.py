@@ -12,8 +12,6 @@ urlpatterns = [
     path('dashboard/', dashboard,name='dashboard'),
     
 
-    
-    
     path('dashboard/Floor', display_Floor, name="display_Floor"),
     path('dashboard/Concrete', display_Concrete, name="display_Concrete"),
     path('dashboard/Insulation', display_Insulation, name="display_Insulation"),

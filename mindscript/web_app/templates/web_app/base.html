@@ -38,33 +38,21 @@
 
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav  py-4 py-md-0">
-                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                      aria-haspopup="true" aria-expanded="false">Home</a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </div>
-                  </li>
-
-
                   <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link" href="#">Dashboard</a>
+                    <a class="nav-link" href="{% url 'home' %}">Home</a>
                   </li>
+                  
 
-
+                  {% if user.is_authenticated %}
                   <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                      aria-haspopup="true" aria-expanded="false">Profile</a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </div>
+                    <a class="nav-link" href="{% url 'dashboard' %}">Dashboard</a>
                   </li>
+
+                 
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link"  href="{% url 'profile' %}">Profile</a>
+                  </li>
+                  {% endif %}
 
                   <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                     <a class="nav-link" href="{% url 'about' %}">About Us</a>
@@ -72,38 +60,53 @@
                 </ul>
 
 
-                <!-- {% if user.is_authenticated %} -->
+                {% if user.is_authenticated %}
                 <ul class=" navbar-nav ml-auto py-4 py-md-0 navbar-right">
                   <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link" href="#">Logout</a>
+                    <a class="nav-link" href="{% url 'logout' %}">Logout</a>
                   </li>
                 </ul>
-                <!-- {% else %} -->
+                {% else %} 
                 <ul class=" navbar-nav ml-auto py-4 py-md-0 navbar-right">
                   <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link" href="{% url 'login' %}">Login</a>
                   </li>
                   <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
-                    <a class="nav-link" href="#">Sign Up</a>
+                    <a class="nav-link" href="{% url 'register' %}">Sign Up</a>
                   </li>
                 </ul>
+                {% endif %}
               </div>
-              <!-- {% endif %} -->
+              
             </nav>
 
           </div>
         </div>
       </div>
     </div>
+
+    
   </header>
 
 
   <main role="main" style="padding-top: 8rem;">
-
-    {% block content %}
-    {% endblock content %}
-
+    <div class="row">
+      <div class="col-md-8">
+        {% if messages %}
+          {% for message in messages%}
+            <div class="alert alert-{{message.tags}}">
+              {{message}}
+            </div>
+          {% endfor %}
+        {% endif %}
+        
+        {% block content %}
+        {% endblock content %}
+      </div>
+    </div>
   </main>
+
+  
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
