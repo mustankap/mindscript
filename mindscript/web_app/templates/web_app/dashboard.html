@@ -83,62 +83,62 @@
             <td>{{ item.status }}</td>
             <td>{{ item.issues }}</td>
     
-            {% if header|lower == "Floor" %}
+            {% if header == "Floor" %}
             <td>
                 <a href="{% url 'edit_Floor' item.pk %}" class="btn btn-warning btn-sm" role="button" aria-pressed="true" > Edit</a>
                 <a href="{% url 'delete_Floor' item.pk%}" class="btn btn-danger btn-sm" role="button" aria-pressed="true" > x</a>
             </td>
-            {% elif header|lower == "Concrete" %}
+            {% elif header == "Concrete" %}
             <td>
                 <a href="{% url 'edit_Concrete' item.pk %}" class="btn btn-warning btn-sm" role="button" aria-pressed="true" > Edit</a>
                 <a href="{% url 'delete_Concrete' item.pk%}" class="btn btn-danger btn-sm" role="button" aria-pressed="true" > x</a>
             </td>
-            {% elif header|lower == "Insulation" %}
+            {% elif header == "Insulation" %}
             <td>
                 <a href="{% url 'edit_Insulation' item.pk %}" class="btn btn-warning btn-sm" role="button" aria-pressed="true" > Edit</a>
                 <a href="{% url 'delete_Insulation' item.pk%}" class="btn btn-danger btn-sm" role="button" aria-pressed="true" > x</a>
             </td>
-            {% elif header|lower == "Electrical_wiring" %}
+            {% elif header == "Electrical_wiring" %}
             <td>
                 <a href="{% url 'edit_Electrical_wiring' item.pk %}" class="btn btn-warning btn-sm" role="button" aria-pressed="true" > Edit</a>
                 <a href="{% url 'delete_Electrical_wiring' item.pk%}" class="btn btn-danger btn-sm" role="button" aria-pressed="true" > x</a>
             </td>
-            {% elif header|lower == "Cement" %}
+            {% elif header == "Cement" %}
             <td>
                 <a href="{% url 'edit_Cement' item.pk %}" class="btn btn-warning btn-sm" role="button" aria-pressed="true" > Edit</a>
                 <a href="{% url 'delete_Cement' item.pk%}" class="btn btn-danger btn-sm" role="button" aria-pressed="true" > x</a>
             </td>
-            {% elif header|lower == "Plaster" %}
+            {% elif header == "Plaster" %}
             <td>
                 <a href="{% url 'edit_Plaster' item.pk %}" class="btn btn-warning btn-sm" role="button" aria-pressed="true" > Edit</a>
                 <a href="{% url 'delete_Plaster' item.pk%}" class="btn btn-danger btn-sm" role="button" aria-pressed="true" > x</a>
             </td>
-            {% elif header|lower == "Ceiling" %}
+            {% elif header == "Ceiling" %}
             <td>
                 <a href="{% url 'edit_Ceiling' item.pk %}" class="btn btn-warning btn-sm" role="button" aria-pressed="true" > Edit</a>
                 <a href="{% url 'delete_Ceiling' item.pk%}" class="btn btn-danger btn-sm" role="button" aria-pressed="true" > x</a>
             </td>
-            {% elif header|lower == "Paint" %}
+            {% elif header == "Paint" %}
             <td>
                 <a href="{% url 'edit_Paint' item.pk %}" class="btn btn-warning btn-sm" role="button" aria-pressed="true" > Edit</a>
                 <a href="{% url 'delete_Paint' item.pk%}" class="btn btn-danger btn-sm" role="button" aria-pressed="true" > x</a>
             </td>
-            {% elif header|lower == "Fire_suppression_equip" %}
+            {% elif header == "Fire_suppression_equip" %}
             <td>
                 <a href="{% url 'edit_Fire_suppression_equip' item.pk %}" class="btn btn-warning btn-sm" role="button" aria-pressed="true" > Edit</a>
                 <a href="{% url 'delete_Fire_suppression_equip' item.pk%}" class="btn btn-danger btn-sm" role="button" aria-pressed="true" > x</a>
             </td>
-            {% elif header|lower == "HVAC" %}
+            {% elif header == "HVAC" %}
             <td>
                 <a href="{% url 'edit_HVAC' item.pk %}" class="btn btn-warning btn-sm" role="button" aria-pressed="true" > Edit</a>
                 <a href="{% url 'delete_HVAC' item.pk%}" class="btn btn-danger btn-sm" role="button" aria-pressed="true" > x</a>
             </td>
-            {% elif header|lower == "Masonry" %}
+            {% elif header == "Masonry" %}
             <td>
                 <a href="{% url 'edit_Masonry' item.pk %}" class="btn btn-warning btn-sm" role="button" aria-pressed="true" > Edit</a>
                 <a href="{% url 'delete_Masonry' item.pk%}" class="btn btn-danger btn-sm" role="button" aria-pressed="true" > x</a>
             </td>
-            {% elif header|lower == "Plastic" %}
+            {% elif header == "Plastic" %}
             <td>
                 <a href="{% url 'edit_Plastic' item.pk %}" class="btn btn-warning btn-sm" role="button" aria-pressed="true" > Edit</a>
                 <a href="{% url 'delete_Plastic' item.pk%}" class="btn btn-danger btn-sm" role="button" aria-pressed="true" > x</a>

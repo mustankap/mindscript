@@ -1,6 +1,7 @@
 # Register your models here.
 from django.contrib import admin
 from .models import *
+from import_export.admin import ImportExportModelAdmin
 
 @admin.register(
     
@@ -19,5 +20,5 @@ from .models import *
  Plastic,
  Plumbing,
 )
-class ViewAdmin(admin.ModelAdmin):
+class ViewAdmin(ImportExportModelAdmin):
     exclude = ('id', )
