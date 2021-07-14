@@ -3,41 +3,44 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-	</script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-	</script>
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="{% static 'web_app/main.css' %}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+  <title>Mindcript Constructions</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'web_app/main.css' %}">
 </head>
-<body>	
+
+<body>
   <header>
     <div class="navigation-wrap start-header bg-light start-style">
       <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="navbar navbar-expand-md navbar-light">
-            
-              <a class="navbar-brand" ><img src="#" alt=""></a>	
-              
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-md navbar-light">
+
+              <a class="navbar-brand"><img src="{% static 'web_app/mindscript_logo.png' %}" alt=""></a>
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              
+
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav  py-4 py-md-0">
                   <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                      aria-haspopup="true" aria-expanded="false">Home</a>
                     <div class="dropdown-menu">
                       <a class="dropdown-item" href="#">Action</a>
                       <a class="dropdown-item" href="#">Another action</a>
@@ -45,15 +48,16 @@
                       <a class="dropdown-item" href="#">Another action</a>
                     </div>
                   </li>
-                  
-				  
+
+
                   <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                     <a class="nav-link" href="#">Dashboard</a>
                   </li>
-				 
-                  
+
+
                   <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Profile</a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                      aria-haspopup="true" aria-expanded="false">Profile</a>
                     <div class="dropdown-menu">
                       <a class="dropdown-item" href="#">Action</a>
                       <a class="dropdown-item" href="#">Another action</a>
@@ -61,20 +65,20 @@
                       <a class="dropdown-item" href="#">Another action</a>
                     </div>
                   </li>
-                  
+
                   <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                     <a class="nav-link" href="{% url 'about' %}">About Us</a>
                   </li>
                 </ul>
 
 
-				<!-- {% if user.is_authenticated %} -->
-				<ul class=" navbar-nav ml-auto py-4 py-md-0 navbar-right">
-					<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-					  <a class="nav-link" href="#">Logout</a>
-					</li>
-					</ul>
-				<!-- {% else %} -->
+                <!-- {% if user.is_authenticated %} -->
+                <ul class=" navbar-nav ml-auto py-4 py-md-0 navbar-right">
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="#">Logout</a>
+                  </li>
+                </ul>
+                <!-- {% else %} -->
                 <ul class=" navbar-nav ml-auto py-4 py-md-0 navbar-right">
                   <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                     <a class="nav-link" href="#">Login</a>
@@ -85,76 +89,77 @@
                 </ul>
               </div>
               <!-- {% endif %} -->
-          </nav>		
-          
+            </nav>
+
+          </div>
         </div>
-      </div>
       </div>
     </div>
- </header>
+  </header>
 
-    
-    <main role="main" style="padding-top: 8rem;">
-       
-            {% block content %}
-            {% endblock content %}
-        
-    </main>
-    <footer id="footer">
-      <div class="footer-top">
-        <div class="container">
+
+  <main role="main" style="padding-top: 8rem;">
+
+    {% block content %}
+    {% endblock content %}
+
+  </main>
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
         <div class="row">
-    
+
           <div class="col-lg-3 col-md-6">
-          <div class="footer-info">
-            <h3>Mindscript</h3>
-            
-            <div class="social-links mt-3">
-            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            
+            <div class="footer-info">
+              <h3>Mindscript</h3>
+
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+
+              </div>
             </div>
           </div>
-          </div>
-    
+
           <div class="col-lg-2 col-md-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-          </ul>
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
           </div>
-    
-          
+
+
           <div class="col-lg-4 col-md-6 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <form action="" method="post">
-            <input type="email" name="email"><input type="submit" value="Subscribe">
-          </form>
-    
+            <h4>Our Newsletter</h4>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
           </div>
-    
-        </div>
+
         </div>
       </div>
-    
-      <div class="container">
-        <div class="copyright">
+    </div>
+
+    <div class="container">
+      <div class="copyright">
         &copy; Copyright <strong><span>Mindscript</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-        Designed by NeuralTechSoft
-        </div>
       </div>
-      </footer>
-    
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <div class="credits">
+        Designed by Mustansir Kapasi, saloni, aayushi
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 

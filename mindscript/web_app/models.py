@@ -1,7 +1,29 @@
 from django.db import models
 
 # Create your models here.
-
+models_array = ['Steel_framing' ,
+ 'Floors',
+ 'Concrete',
+ 'Lift',
+ 'Composites',
+ 'Insulation',
+ 'Coating',
+ 'Door',
+ 'Plugs_sockets',
+ 'Electrical_wiring',
+ 'Switches',
+ 'gypsum_board',
+ 'Cement',
+ 'Plaster',
+ 'Ceiling',
+ 'Flooring_tiles',
+ 'Wall_covering',
+ 'Paint',
+ 'Fire_suppression_equip',
+ 'HVAC',
+ 'Masonry',
+ 'Plastics',
+ 'Plumbing',]
 class Material(models.Model):
 
     type = models.CharField(max_length=200, blank=False)
@@ -22,40 +44,19 @@ class Material(models.Model):
     def __str__(self):
         return 'Type: {0} Price: {1}'.format(self.type, self.price)
 
-
-class Steel_framing (Material):
-    pass
-class Floors(Material):
+class Floor(Material):
     pass
 class Concrete(Material):
     pass
-class Lift(Material):
-    pass
-class Composites(Material):
-    pass
 class Insulation(Material):
     pass
-class Coating(Material):
-    pass
-class Door(Material):
-    pass
-class Plugs_sockets(Material):
-    pass
 class Electrical_wiring(Material):
-    pass
-class Switches(Material):
-    pass
-class gypsum_board(Material):
     pass
 class Cement(Material):
     pass
 class Plaster(Material):
     pass
 class Ceiling(Material):
-    pass
-class Flooring_tiles(Material):
-    pass
-class Wall_covering(Material):
     pass
 class Paint(Material):
     pass
@@ -65,7 +66,7 @@ class HVAC(Material):
     pass
 class Masonry(Material):
     pass
-class Plastics(Material):
+class Plastic(Material):
     pass
 class Plumbing(Material):
     pass
