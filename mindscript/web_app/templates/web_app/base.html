@@ -52,10 +52,16 @@
                   <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                     <a class="nav-link"  href="{% url 'profile' %}">Profile</a>
                   </li>
+                  
+              
                   {% endif %}
 
                   <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                     <a class="nav-link" href="{% url 'about' %}">About Us</a>
+                  </li>
+
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="{% url 'contact' %}">contact Us</a>
                   </li>
                 </ul>
 
@@ -99,7 +105,14 @@
             </div>
           {% endfor %}
         {% endif %}
-        
+        <section id="hero" class=" p-5  m-5 d-flex flex-column justify-content-center align-items-center">
+          <div class="container text-center text-md-left" data-aos="fade-up">
+            <h1>Welcome to Mindscript constructionos</h1>
+            <h2>Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum tempor sit diam amet diam et eos labore</h4>
+              <p>Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor</p></h2>
+            <a href="{% url 'about' %}" class="btn-get-started scrollto">About Us</a>
+          </div>
+        </section>
         {% block content %}
         {% endblock content %}
       </div>
@@ -156,7 +169,7 @@
         &copy; Copyright <strong><span>Mindscript</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        Designed by Mustansir Kapasi, saloni, aayushi
+        Designed by Mustansir Kapasi
 
       </div>
     </div>

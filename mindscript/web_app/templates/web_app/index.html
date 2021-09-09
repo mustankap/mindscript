@@ -1,79 +1,32 @@
-<!DOCTYPE HTML>
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Mindscript Co</title>
-	<link rel="stylesheet" type="text/css" href="./style.css">
-</head>
-<body>
-	<header class="site-holder">
-		<nav>
-			<div class="logo">
-				<img src="mindscript_logo.png">
-			</div>
-			<div class="menu">
-				<ul>
-					<li class="active"><a href="index.html"><b>Home</b></a></li>
-					<li><a href="Services.html"><b>Services</b></a></li>
-					<li><a href="#"><b>Product</b></a></li>
-					<li><a href="#"><b>Project Session</b></a></li>
-					<li><a href="aboutus.html"><b>About us</b></a></li>
-					<li><a href="Contact.html"><b>Contact us</b></a></li>
-				</ul>
-			</div>	
-		</nav>
-		<div class="title">
-			<h1>  Mindscript Constructions  </h1>
-			<hr>
-			<p>Welcome</p>
-		</div>
-	</header>
+{% extends "web_app/base.html" %}
+    {% block content%}
+      {% load static%} 
 
-	<header class="site-holder2">
-		<nav>
-			<div class="title2">
-				<h1>HOME</h1>
-			</div>
-		</nav>
+<section>
+    <div class="leftside">
+      <img src="{% static 'web_app/BLD3.jpg' %}">
+    </div>
+    <div class="info">
+      <h2> Welcome to the Mindscript Const</h2>
+      <h1>20 Years Exprience</h1>
+      <p><i>"Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Phasellus nec pretium mi. <br>Curabitur facilisis ornare velit non vulputate.<br> Aliquam metus tortor, auctor id gravida condimentum,<br> viverra quis sem.
 
-		<section>
-			<div class="leftside">
-				<img src="const1.jpg">
-			</div>
-			<div class="info">
-				<h2> Welcome to the Mindscript Const</h2>
-				<h1>20 Years Exprience</h1>
-				<p><i>"Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Phasellus nec pretium mi. <br>Curabitur facilisis ornare velit non vulputate.<br> Aliquam metus tortor, auctor id gravida condimentum,<br> viverra quis sem.
+        Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.<br> Aliquam metus tortor, auctor id gravida condimentum,<br> viverra quis sem. 
+        
+        "</i></p>
+    </div>
+    <div class="VM">
+      <h2>Vision</h2>
+      <hr>
+      <p><i>
+        "To improve with the innovation and creativity.<br> To inculcate values and ethics to the future generation"
+      </i>
+      </p>
+      <h2 class="Mission">Mission</h2>
+      <hr>
+      <p><i>"Teamwork is the most important...<br> We should improve ourselves"</i></p>
+    </div>
+  </section>
 
-					Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.<br> Aliquam metus tortor, auctor id gravida condimentum,<br> viverra quis sem. 
-					
-					"</i></p>
-			</div>
-			<div class="VM">
-				<h2>Vision</h2>
-				<hr>
-				<p><i>
-					"To improve with the innovation and creativity.<br> To inculcate values and ethics to the future generation"
-				</i>
-				</p>
-				<h2 class="Mission">Mission</h2>
-				<hr>
-				<p><i>"Teamwork is the most important...<br> We should improve ourshelves"</i></p>
-			</div>
-		</section>
-	</header>
-	<header class="site-holder3">
-		<section>
-			<div class="Contact">
-				<h1>  </h1>
-			</div>
-		</section>
-	</header>
-	<div class="ownership">
-		<h2>Designed by _____</h2>
-		<h3>© Mindscript Co., All rights reserved</h3>
-	</div>
-	
-</body>
-</html>
+        
+  {% endblock content %}

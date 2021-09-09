@@ -8,8 +8,10 @@ from django.conf.urls import url
 
 urlpatterns = [
     path('', home,name='home'),
+    path('index/', index,name='index'),
     path('about/', about,name='about'),
     path('dashboard/', dashboard,name='dashboard'),
+    path('contact/', contact,name='contact'),
     
 
     path('dashboard/Floor', display_Floor, name="display_Floor"),

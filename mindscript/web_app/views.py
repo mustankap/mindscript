@@ -14,6 +14,12 @@ def about(request):
 def dashboard(request):
     return render(request,'web_app/dashboard.html')
 
+def contact(request):
+    return render(request,'web_app/contact.html')
+
+def index(request):
+    return render(request,'web_app/index.html')
+
 
 def display_Floor(request):
     items = Floor.objects.all()

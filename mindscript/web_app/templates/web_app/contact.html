@@ -1,0 +1,54 @@
+{% extends "web_app/base.html" %}
+  {% block content%}
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Feel free to contact us by posting your query or offer here itself !</p>
+      </div>
+
+      <div class="row no-gutters justify-content-center" data-aos="fade-up">
+
+     
+
+        <!-- https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sShaad+residency/@18.9804159,72.8358068,20z/data=!4m5!3m4!1s0x3be7cf0b6e83f4e5:0xae19cc87e8fdc1bf!8m2!3d18.9804159!4d72.8360369 -->
+        <div class="col-lg-5 d-flex align-items-stretch"> 
+          <!-- <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Eiffel+Tower,Paris+France" frameborder="0" allowfullscreen></iframe> -->
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1586.3055559371955!2d72.8363508625071!3d18.98038942112437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf0b6e83f4e5%3A0xae19cc87e8fdc1bf!2sShaad%20residency!5e0!3m2!1sen!2sin!4v1608743594895!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
+        </div> 
+
+      </div>
+
+      <div class="row mt-5 justify-content-center" data-aos="fade-up">
+        <div class="col-lg-10">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="form-row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validate"></div>
+              </div>
+              <div class="col-md-6 form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validate"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validate"></div>
+            </div>
+           
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+   
+{% endblock content %}
