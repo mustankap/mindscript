@@ -1,1 +1,1 @@
-web: guniocorn mindscript.wsgi
+web: gunicorn django_project.wsgi
