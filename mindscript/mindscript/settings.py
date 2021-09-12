@@ -25,7 +25,7 @@ SECRET_KEY = 'eg-8!u-llvof28mjncjv*4e9$0edv3q-wqg-lnvojt6d)cu0%#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mindscript.herokuapp.com']
 
 
 # Application definition
